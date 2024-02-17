@@ -1,7 +1,9 @@
 
+import 'package:connect/Screen/BottomNavBar/bottom_nab_bar.dart';
 import 'package:connect/Screen/Home%20Page/home_screen.dart';
 import 'package:connect/Screen/Password%20Recover/password_recover1.dart';
 import 'package:connect/Screen/Profile%20Screen/profile_screen.dart';
+import 'package:connect/Screen/Setting%20Screen/setting_screen.dart';
 import 'package:connect/Screen/Sing%20Up/SingUp2/singup_screentwo.dart';
 import 'package:connect/Widgets/custom_textfield.dart';
 import 'package:connect/Widgets/main_button.dart';
@@ -70,7 +72,7 @@ class LoginScreen extends StatelessWidget {
                 buttomText: "লগ ইন",
                 color: Colors.red,
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileScreen()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>BottomNavBar()));
                 },
                 textColor: Colors.white),
             SizedBox(

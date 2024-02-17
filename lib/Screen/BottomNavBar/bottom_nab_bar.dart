@@ -13,55 +13,58 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
-  List bottomIcon=[
-    Icon(Icons.home),
-    Icon(Icons.link),
-    Icon(Icons.sms), 
-    Icon(Icons.person_outline_sharp),
-    Icon(Icons.notifications_active_outlined)
+  List bottomIcon = [
+    Icons.home,
+    Icons.link,
+    Icons.sms,
+    Icons.person_outline_sharp,
+    Icons.notifications_active_outlined
   ];
-  List bottomPage=[
+  List bottomPage = [
     HomeScreen(),
     LinkScreen(),
     MassegeScreen(),
     ProfileScreen(),
     NotificationScreen(),
   ];
-  var index=0; 
+  var index = 0;
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return  Scaffold(
-      bottomNavigationBar:Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(20),
-          topRight: Radius.circular(20),
-
-        ),
-        border: Border.all(color: Colors.white,width: 4)
-      ),
-      height: 60,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          for(var i=0; i<bottomIcon.length; i++)
-          InkWell(
-            onTap: (){
-              setState(() {
-               index=i; 
-               print(index);
-              });
-            },
-            child: Icon(bottomIcon[i],color: index==i? Colors.red:Colors.black,),
+    return Scaffold(
+    
+      bottomNavigationBar: Container(
+        height: 60,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(30),
+            topRight: Radius.circular(30),
           ),
-        ],
+
+          border: Border.all(color: Colors.white,width: 4)
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            for (var i = 0; i < bottomIcon.length; i++)
+              InkWell(
+                  onTap: () {
+                    setState(() {
+                      index = i;
+                      print(index);
+                    });
+                  },
+                  child: Icon(
+                    bottomIcon[i],
+                    color: index == i ? Colors.red : Colors.black,
+                  )),
+          ],
+        ),
       ),
-      
+      body: AnimatedSwitcher(
+        duration: Duration(seconds: 2),
+        child: bottomPage[index],
       ),
-      body: AnimatedSwitcher(duration: Duration(seconds: 2),
-      child: bottomPage[index],),
-      
     );
   }
 }
