@@ -325,16 +325,7 @@ class LinkScreen extends StatelessWidget {
                                       );
                                     }),
                               ),
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                radius: 25,
-                                child: Center(
-                                  child: Icon(
-                                    Icons.create_new_folder,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              )
+                              
                             ],
                           ),
                           Divider(
@@ -487,16 +478,6 @@ class LinkScreen extends StatelessWidget {
                                       );
                                     }),
                               ),
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                radius: 25,
-                                child: Center(
-                                  child: Icon(
-                                    Icons.create_new_folder,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              )
                             ],
                           ),
                           Divider(
@@ -549,6 +530,16 @@ class LinkScreen extends StatelessWidget {
               ],
             )
           ],
+        ),
+      ),
+      floatingActionButton: CircleAvatar(
+        backgroundColor: Colors.red,
+        radius: 25,
+        child: Center(
+          child: Icon(
+            Icons.create_new_folder,
+            color: Colors.white,
+          ),
         ),
       ),
     );

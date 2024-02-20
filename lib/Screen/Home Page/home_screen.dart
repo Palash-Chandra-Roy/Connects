@@ -9,8 +9,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   var item = 3;
-  var show=12; 
-
+  var show = 12;
 
   @override
   Widget build(BuildContext context) {
@@ -86,9 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     alignment: Alignment.bottomCenter,
                     clipBehavior: Clip.none,
                     children: [
-                      
                       Container(
-                        
                         width: size.width,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -96,16 +93,15 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Padding(
                           padding: EdgeInsets.all(5),
                           child: GridView.builder(
-                            primary: false,
-                            shrinkWrap: true,
+                              primary: false,
+                              shrinkWrap: true,
                               gridDelegate:
                                   SliverGridDelegateWithFixedCrossAxisCount(
-                                    
                                       crossAxisCount: 3,
                                       crossAxisSpacing: 20,
                                       mainAxisSpacing: 20,
                                       childAspectRatio: 2 / 2),
-                              itemCount: item > show?show:item,
+                              itemCount: item > show ? show : item,
                               itemBuilder: (context, index) {
                                 return Column(
                                   children: [
@@ -131,26 +127,25 @@ class _HomeScreenState extends State<HomeScreen> {
                               }),
                         ),
                       ),
-                    Positioned(
-                      bottom: -10,
-                      child:InkWell(
-                        onTap: (){
-                          if (item==show|| item>show){
-                            setState(() {
-                              item=3;
-                              
-                          
-                            });
-                          }
-                          else{
-                            
-                            setState(() {
-                             item=item+3; 
-
-                            });
-                          }
-                        },
-                        child: Icon(Icons.arrow_drop_down_circle)),)
+                      Positioned(
+                        bottom: -10,
+                        child: InkWell(
+                            onTap: () {
+                              if (item == show || item > show) {
+                                setState(() {
+                                  item = 3;
+                                });
+                              } else {
+                                setState(() {
+                                  item = item + 3;
+                                });
+                              }
+                            },
+                            child: Icon(
+                              Icons.arrow_drop_down_circle,
+                              color: Colors.red,
+                            )),
+                      )
                     ],
                   ),
                 ),
@@ -259,12 +254,10 @@ class _HomeScreenState extends State<HomeScreen> {
                               )
                             ],
                           ),
-                          
                           Divider(
                             color: Colors.grey,
                             height: 4,
                           ),
-                          
                           Row(
                             children: [
                               IconButton(
@@ -280,13 +273,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                 style:
                                     TextStyle(fontSize: 8, color: Colors.black),
                               ),
-                              SizedBox(width: 20,),
-                             Container(
-                              height: 23,
-                              width: 2,
-                              color: Colors.grey,
-                             ),
-                              
+                              SizedBox(
+                                width: 20,
+                              ),
+                              Container(
+                                height: 23,
+                                width: 2,
+                                color: Colors.grey,
+                              ),
                               IconButton(
                                 onPressed: () {},
                                 icon: Icon(
@@ -300,7 +294,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                 style:
                                     TextStyle(fontSize: 8, color: Colors.black),
                               ),
-                          
                             ],
                           )
                         ],
@@ -308,7 +301,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-                  Padding(
+                Padding(
                   padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
                   child: Container(
                     width: size.width,
@@ -411,22 +404,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                       );
                                     }),
                               ),
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                radius: 25,
-                                child: Center(
-                                  child: Icon(Icons.create_new_folder,color: Colors.white,),
-                                ),
-                              )
-                         
                             ],
                           ),
-                          
                           Divider(
                             color: Colors.grey,
                             height: 4,
                           ),
-                          
                           Row(
                             children: [
                               IconButton(
@@ -442,13 +425,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                 style:
                                     TextStyle(fontSize: 8, color: Colors.black),
                               ),
-                              SizedBox(width: 20,),
-                             Container(
-                              height: 23,
-                              width: 2,
-                              color: Colors.grey,
-                             ),
-                              
+                              SizedBox(
+                                width: 20,
+                              ),
+                              Container(
+                                height: 23,
+                                width: 2,
+                                color: Colors.grey,
+                              ),
                               IconButton(
                                 onPressed: () {},
                                 icon: Icon(
@@ -462,7 +446,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                 style:
                                     TextStyle(fontSize: 8, color: Colors.black),
                               ),
-                          
                             ],
                           )
                         ],
@@ -470,10 +453,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
-             
               ],
             )
           ],
+        ),
+      ),
+      floatingActionButton: CircleAvatar(
+        backgroundColor: Colors.red,
+        radius: 25,
+        child: Center(
+          child: Icon(
+            Icons.create_new_folder,
+            color: Colors.white,
+          ),
         ),
       ),
     );
