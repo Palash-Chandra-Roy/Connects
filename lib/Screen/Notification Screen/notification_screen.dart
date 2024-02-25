@@ -50,160 +50,425 @@ class NotificationScreen extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left: 20, right: 20, top: 20),
                   child: Container(
-                    height: size.height * 0.8,
+                    height: size.height * 0.7,
                     width: size.width,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(20)),
                         color: Colors.white),
                     child: Padding(
                       padding: EdgeInsets.only(left: 20, right: 20, top: 20),
-                      child: Column(
-                        children: [
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                radius: 5,
-                              ),
-                              Text(
-                                "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                style:
-                                    TextStyle(fontSize: 8, color: Colors.black),
-                              ), 
-
-                            ],
-                          ),
-                          SizedBox(
-                            height: 10,
-
-                          ),
-                          Divider(
-                            color: Color.fromARGB(255, 15, 9, 9),
-                            height: 4,
-                          ),
-                          SizedBox(height: 10,), 
-                              Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                radius: 5,
-                              ),SizedBox(width: 5,),
-                              Text(
-                                "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                style:
-                                    TextStyle(fontSize: 8, color: Colors.black),
-                              ), 
-
-                            ],
-                          ),
-                          SizedBox(
-                            height: 10,
-
-                          ),
-                          Divider(
-                            color: Color.fromARGB(255, 15, 9, 9),
-                            height: 4,
-                          ),
-                      SizedBox(height: 10,), 
-                              Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                radius: 5,
-                              ),SizedBox(width: 5,),
-                              Text(
-                                "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                style:
-                                    TextStyle(fontSize: 8, color: Colors.black),
-                              ), 
-
-                            ],
-                          ),
-                          SizedBox(
-                            height: 10,
-
-                          ),
-                          Divider(
-                            color: Color.fromARGB(255, 15, 9, 9),
-                            height: 4,
-                          ),
-                          SizedBox(height: 10,), 
-                              Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                radius: 5,
-                              ),SizedBox(width: 5,),
-                              Text(
-                                "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                style:
-                                    TextStyle(fontSize: 8, color: Colors.black),
-                              ), 
-
-                            ],
-                          ),
-                          SizedBox(
-                            height: 10,
-
-                          ),
-                          Divider(
-                            color: Color.fromARGB(255, 15, 9, 9),
-                            height: 4,
-                          ),
-                          SizedBox(height: 10,), 
-                              Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                radius: 5,
-                              ),SizedBox(width: 5,),
-                              Text(
-                                "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                style:
-                                    TextStyle(fontSize: 8, color: Colors.black),
-                              ), 
-
-                            ],
-                          ),
-                          SizedBox(
-                            height: 10,
-
-                          ),
-                          Divider(
-                            color: Color.fromARGB(255, 15, 9, 9),
-                            height: 4,
-                          ),
-                          SizedBox(height: 10,), 
-                              Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              CircleAvatar(
-                                backgroundColor: Colors.red,
-                                radius: 5,
-                              ),
-                              SizedBox(width: 5,),
-                              Text(
-                                "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                style:
-                                    TextStyle(fontSize: 8, color: Colors.black),
-                              ), 
-
-                            ],
-                          ),
-                          SizedBox(
-                            height: 10,
-
-                          ),
-                          Divider(
-                            color: Color.fromARGB(255, 15, 9, 9),
-                            height: 4,
-                          ),
-                        ],
+                      child: SingleChildScrollView(
+                        child: Column(
+                          children: [
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                         
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                               Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style:
+                                      TextStyle(fontSize: 6, color: Colors.black),
+                                ), 
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
+                                  IconButton(onPressed: (){}, 
+                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                  ],
+                                )
+                              ],
+                            ),
+                            
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                          
+                          ],
+                        ),
                       ),
                     ),
                   ),
