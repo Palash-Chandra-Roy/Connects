@@ -32,14 +32,34 @@ class NotificationScreen extends StatelessWidget {
                       style: TextStyle(fontSize: 14, color: Colors.red),
                     ),
                     leading: IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
                         icon: Icon(
                           Icons.arrow_back_ios,
                           color: Colors.black,
                         )),
                     actions: [
                       IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            showDialog(context: context, 
+                            builder: (BuildContext context ){
+                              return
+                              AlertDialog(
+                              content: Column(
+                                children: [
+                                 
+                                  Text("সবগুলি পঠিত করুন",style: TextStyle(fontSize:10,color: Colors.black ),),
+                                  Divider(color: Colors.grey,
+                                  height: 4,),
+                                  Text("সব ডিলিট করুন",style: TextStyle(fontSize:10,color: Colors.black ),),
+                                
+                                ],
+                              ),
+                            );
+                            });
+                            
+                          },
                           icon: Icon(
                             Icons.more_vert,
                             color: Colors.black,
