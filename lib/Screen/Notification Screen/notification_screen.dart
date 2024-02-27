@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class NotificationScreen extends StatelessWidget {
-  const NotificationScreen({super.key});
+  NotificationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,23 +42,38 @@ class NotificationScreen extends StatelessWidget {
                     actions: [
                       IconButton(
                           onPressed: () {
-                            showDialog(context: context, 
-                            builder: (BuildContext context ){
-                              return
-                              AlertDialog(
-                              content: Column(
-                                children: [
-                                 
-                                  Text("সবগুলি পঠিত করুন",style: TextStyle(fontSize:10,color: Colors.black ),),
-                                  Divider(color: Colors.grey,
-                                  height: 4,),
-                                  Text("সব ডিলিট করুন",style: TextStyle(fontSize:10,color: Colors.black ),),
-                                
-                                ],
-                              ),
-                            );
-                            });
-                            
+                            showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return AlertDialog(
+                                    content: Container(
+                                      height: 60,
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.center,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text(
+                                            "সবগুলি পঠিত করুন",
+                                            style: TextStyle(
+                                                fontSize: 10,
+                                                color: Colors.black),
+                                          ),
+                                          Divider(
+                                            color: Colors.grey,
+                                            height: 4,
+                                          ),
+                                          Text(
+                                            "সব ডিলিট করুন",
+                                            style: TextStyle(
+                                                fontSize: 10,
+                                                color: Colors.black),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  );
+                                });
                           },
                           icon: Icon(
                             Icons.more_vert,
@@ -80,142 +95,6 @@ class NotificationScreen extends StatelessWidget {
                       child: SingleChildScrollView(
                         child: Column(
                           children: [
-                               Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Colors.red,
-                                  radius: 5,
-                                ),
-                                Text(
-                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                  children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
-                                  ],
-                                )
-                              ],
-                            ),
-                            
-                            Divider(
-                              color: Color.fromARGB(255, 15, 9, 9),
-                              height: 4,
-                            ),
-                               Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Colors.red,
-                                  radius: 5,
-                                ),
-                                Text(
-                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                  children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
-                                  ],
-                                )
-                              ],
-                            ),
-                            
-                            Divider(
-                              color: Color.fromARGB(255, 15, 9, 9),
-                              height: 4,
-                            ),
-                               Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Colors.red,
-                                  radius: 5,
-                                ),
-                                Text(
-                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                  children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
-                                  ],
-                                )
-                              ],
-                            ),
-                            
-                            Divider(
-                              color: Color.fromARGB(255, 15, 9, 9),
-                              height: 4,
-                            ),
-                               Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Colors.red,
-                                  radius: 5,
-                                ),
-                                Text(
-                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                  children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
-                                  ],
-                                )
-                              ],
-                            ),
-                            
-                            Divider(
-                              color: Color.fromARGB(255, 15, 9, 9),
-                              height: 4,
-                            ),
-                               Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                CircleAvatar(
-                                  backgroundColor: Colors.red,
-                                  radius: 5,
-                                ),
-                                Text(
-                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                  children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
-                                  ],
-                                )
-                              ],
-                            ),
-                            
-                            Divider(
-                              color: Color.fromARGB(255, 15, 9, 9),
-                              height: 4,
-                            ),
-                         
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
@@ -225,25 +104,34 @@ class NotificationScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
                                   children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
                                   ],
                                 )
                               ],
                             ),
-                            
                             Divider(
                               color: Color.fromARGB(255, 15, 9, 9),
                               height: 4,
                             ),
-                               Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 CircleAvatar(
@@ -252,25 +140,34 @@ class NotificationScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
                                   children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
                                   ],
                                 )
                               ],
                             ),
-                            
                             Divider(
                               color: Color.fromARGB(255, 15, 9, 9),
                               height: 4,
                             ),
-                               Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 CircleAvatar(
@@ -279,25 +176,34 @@ class NotificationScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
                                   children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
                                   ],
                                 )
                               ],
                             ),
-                            
                             Divider(
                               color: Color.fromARGB(255, 15, 9, 9),
                               height: 4,
                             ),
-                               Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 CircleAvatar(
@@ -306,25 +212,34 @@ class NotificationScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
                                   children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
                                   ],
                                 )
                               ],
                             ),
-                            
                             Divider(
                               color: Color.fromARGB(255, 15, 9, 9),
                               height: 4,
                             ),
-                               Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 CircleAvatar(
@@ -333,25 +248,34 @@ class NotificationScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
                                   children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
                                   ],
                                 )
                               ],
                             ),
-                            
                             Divider(
                               color: Color.fromARGB(255, 15, 9, 9),
                               height: 4,
                             ),
-                             Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 CircleAvatar(
@@ -360,25 +284,34 @@ class NotificationScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
                                   children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
                                   ],
                                 )
                               ],
                             ),
-                            
                             Divider(
                               color: Color.fromARGB(255, 15, 9, 9),
                               height: 4,
                             ),
-                               Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 CircleAvatar(
@@ -387,25 +320,34 @@ class NotificationScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
                                   children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
                                   ],
                                 )
                               ],
                             ),
-                            
                             Divider(
                               color: Color.fromARGB(255, 15, 9, 9),
                               height: 4,
                             ),
-                               Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 CircleAvatar(
@@ -414,25 +356,34 @@ class NotificationScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
                                   children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
                                   ],
                                 )
                               ],
                             ),
-                            
                             Divider(
                               color: Color.fromARGB(255, 15, 9, 9),
                               height: 4,
                             ),
-                               Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 CircleAvatar(
@@ -441,25 +392,34 @@ class NotificationScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
                                   children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
                                   ],
                                 )
                               ],
                             ),
-                            
                             Divider(
                               color: Color.fromARGB(255, 15, 9, 9),
                               height: 4,
                             ),
-                               Row(
+                            Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 CircleAvatar(
@@ -468,25 +428,213 @@ class NotificationScreen extends StatelessWidget {
                                 ),
                                 Text(
                                   "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
-                                  style:
-                                      TextStyle(fontSize: 6, color: Colors.black),
-                                ), 
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
                                   children: [
-                                    Text("১০ মিনিট",style: TextStyle(fontSize: 6,color: Colors.black),),
-                                  IconButton(onPressed: (){}, 
-                                  icon:Icon(Icons.more_horiz,size: 20,color: Colors.black,))
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
                                   ],
                                 )
                               ],
                             ),
-                            
                             Divider(
                               color: Color.fromARGB(255, 15, 9, 9),
                               height: 4,
                             ),
-                          
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
+                                  ],
+                                )
+                              ],
+                            ),
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
+                                  ],
+                                )
+                              ],
+                            ),
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
+                                  ],
+                                )
+                              ],
+                            ),
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
+                                  ],
+                                )
+                              ],
+                            ),
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CircleAvatar(
+                                  backgroundColor: Colors.red,
+                                  radius: 5,
+                                ),
+                                Text(
+                                  "Simultaneously we had a problem with prisoner drunkenness \n that we couldn't figure out. I mean, the guards searchded cells  \n multiple times to no avail. ",
+                                  style: TextStyle(
+                                      fontSize: 6, color: Colors.black),
+                                ),
+                                Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceAround,
+                                  children: [
+                                    Text(
+                                      "১০ মিনিট",
+                                      style: TextStyle(
+                                          fontSize: 6, color: Colors.black),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon: Icon(
+                                          Icons.more_horiz,
+                                          size: 20,
+                                          color: Colors.black,
+                                        ))
+                                  ],
+                                )
+                              ],
+                            ),
+                            Divider(
+                              color: Color.fromARGB(255, 15, 9, 9),
+                              height: 4,
+                            ),
                           ],
                         ),
                       ),
