@@ -84,7 +84,7 @@ class MassegeScreen extends StatelessWidget {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.only(left: 20, right: 20, top: 10),
+                         EdgeInsets.only(left: 20, right: 20, top: 10),
                     child: Container(
                       height: size.height * 0.10,
                       width: size.width,
@@ -92,49 +92,55 @@ class MassegeScreen extends StatelessWidget {
                           borderRadius: BorderRadius.all(Radius.circular(20)),
                           color: Colors.white),
                       child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                       padding: EdgeInsets.only(left: 10, right: 10, top: 10),
                         child: Row(
+                          
                           children: [
                             CircleAvatar(
                               backgroundImage:
                                   AssetImage("assets/image/palash.jpg"),
                               radius: 20,
                             ),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                           
+                            Column(
                               children: [
-                                Text(
-                                  "Palsh Roy",
-                                  style: TextStyle(
-                                      fontSize: 10,
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                Container(
-                                  height: 14,
-                                  width: 50,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20)),
-                                  child: Center(
-                                    child: Text(
-                                      "১৫ মিনিট ",
+                                Row(
+                                  
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Palsh Roy",
                                       style: TextStyle(
-                                          fontSize: 7,
+                                          fontSize: 10,
                                           color: Colors.black,
                                           fontWeight: FontWeight.bold),
                                     ),
-                                  ),
-                                )
+                                    Container(
+                                      height: 14,
+                                      width: 50,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(20)),
+                                      child: Center(
+                                        child: Text(
+                                          "১৫ মিনিট ",
+                                          style: TextStyle(
+                                              fontSize: 7,
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                    ),
 
+                                    
+                                  ],
+                                ),
                                 // SizedBox(height: 10,),
-                                // Text(
-                                //   "For athletes, high produces two contradictory effects on proformance. for explosive events (sprints up to 400 meters, long jump, triple jump)the reduction in atmospheric prssure means there is less resistance from the atmosphere and the athlete's performance will generally by better at hight altltude.",
-                                //   style:
-                                //       TextStyle(fontSize: 7, color: Colors.black),
-                                // ),
+                                //     Text(
+                                //       "For athletes, high produces two contradictory effects on proformance. for explosive events (sprints up to 400 meters, long jump, triple jump)the reduction in atmospheric prssure means there is less resistance from the atmosphere and the athlete's performance will generally by better at hight altltude.",
+                                //       style:
+                                //           TextStyle(fontSize: 7, color: Colors.black),
+                                //     ),
                               ],
                             ),
                           ],
@@ -147,15 +153,7 @@ class MassegeScreen extends StatelessWidget {
             ],
           ),
         ),
-        floatingActionButton: CircleAvatar(
-          backgroundColor: Colors.red,
-          radius: 25,
-          child: Center(
-            child: Icon(
-              Icons.create_new_folder,
-              color: Colors.white,
-            ),
-          ),
-        ));
+      
+        );
   }
 }

@@ -35,49 +35,59 @@ class ProfileScreen extends StatelessWidget {
                   padding: EdgeInsets.symmetric(
                     horizontal: 20,
                   ),
-                  child:AppBar(
+                  child: AppBar(
                     elevation: 0,
-                    centerTitle:true,
+                    centerTitle: true,
                     backgroundColor: Colors.transparent,
                     //iconTheme:IconThemeData(color: Colors.white),
-                    title:Text(
+                    title: Text(
                       "প্রোফাইল",
                       style: TextStyle(fontSize: 14, color: Colors.white),
                     ),
-                    actions:[
+                    actions: [
                       IconButton(
-                          onPressed: (){
-                          },
-                          icon:Icon(
+                          onPressed: () {},
+                          icon: Icon(
                             Icons.menu,
-                            color:Colors.white,
+                            color: Colors.white,
                           )),
                     ],
                   ),
                 ),
                 Padding(
-                  padding:EdgeInsets.only(left: 20, right: 20, top: 40),
-                  child:Container(
-                    height:size.height *0.35,
-                    width:size.width,
-                    decoration:BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(20)),
-                        color:Colors.white),
-                  ),
-                ),
+                    padding: EdgeInsets.only(left: 20, right: 20, top: 40),
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      clipBehavior: Clip.none,
+                      children: [
+                        Container(
+                          height: size.height * 0.35,
+                          width: size.width,
+                          decoration: BoxDecoration(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(20)),
+                              color: Colors.white),
+                              child: Column(
+                                children: [
+                                  Text("data")
+                                ],
+                              ),
+                        ),
+                        Positioned(
+                            top: -20,
+                            child: CircleAvatar(
+                              radius: 20,
+                             
+                              backgroundImage: AssetImage(
+                                "assets/image/palash.jpg",
+                              ),
+                            )),
+                            
+                      ],
+                    )),
               ],
-            )
+            ),
           ],
-        ),
-      ),
-       floatingActionButton: CircleAvatar(
-        backgroundColor: Colors.red,
-        radius: 25,
-        child: Center(
-          child: Icon(
-            Icons.create_new_folder,
-            color: Colors.white,
-          ),
         ),
       ),
     );
