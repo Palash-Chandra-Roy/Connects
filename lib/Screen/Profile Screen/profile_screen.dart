@@ -67,9 +67,9 @@ class ProfileScreen extends StatelessWidget {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20)),
                               color: Colors.white),
-                              child: Column(
+                            child: Column(
                                 children: [
-                                  Text("data")
+                                  Text("Palash")
                                 ],
                               ),
                         ),
